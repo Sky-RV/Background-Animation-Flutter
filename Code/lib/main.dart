@@ -5,6 +5,7 @@ import 'Customize.dart';
 import 'Dark.dart';
 import 'DotLine.dart';
 import 'GingleBell.dart';
+import 'Light.dart';
 import 'Smoke.dart';
 import 'animBGFullCode.dart';
 
@@ -158,7 +159,7 @@ class MyHomePage extends StatelessWidget {
               onPressed: (){
                 Navigator.push(
                     context,
-                    MaterialPageRoute(builder: (context) => DotLine())
+                    MaterialPageRoute(builder: (context) => Light())
                 );
               },
             ),
