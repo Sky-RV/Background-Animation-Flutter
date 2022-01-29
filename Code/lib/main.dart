@@ -4,6 +4,7 @@ import 'package:animation/Snow.dart';
 import 'Chrismas.dart';
 import 'Customize.dart';
 import 'GingleBell.dart';
+import 'Smoke.dart';
 
 void main() => runApp(MyApp());
 
@@ -72,6 +73,30 @@ class MyHomePage extends StatelessWidget {
                 Navigator.push(
                     context,
                     MaterialPageRoute(builder: (context) => Customize())
+                );
+              },
+            ),
+
+            SizedBox(height: 20,),
+
+            ElevatedButton(
+              child: Text("Smoke Background"),
+              onPressed: (){
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => Smoke())
+                );
+              },
+            ),
+
+            SizedBox(height: 20,),
+
+            ElevatedButton(
+              child: Text("Dots and Line Background"),
+              onPressed: (){
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => Smoke())
                 );
               },
             ),
