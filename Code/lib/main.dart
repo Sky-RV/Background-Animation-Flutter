@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:animation/Snow.dart';
 
+import 'GingleBell.dart';
+
 void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
@@ -32,6 +34,18 @@ class MyHomePage extends StatelessWidget {
                 Navigator.push(
                     context,
                     MaterialPageRoute(builder: (context) => Snow())
+                );
+              },
+            ),
+
+            SizedBox(height: 20,),
+
+            ElevatedButton(
+              child: Text("GingleBell Background"),
+              onPressed: (){
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => GingleBell())
                 );
               },
             ),

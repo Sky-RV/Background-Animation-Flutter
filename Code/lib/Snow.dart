@@ -5,7 +5,7 @@ class Snow extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Smooth Background',
+      title: 'Snow Background',
       debugShowCheckedModeBanner: false,
       home: MyHomePage(),
     );
@@ -31,7 +31,7 @@ class MyHomePage extends StatelessWidget {
         isRandSize: true,
         isRandomColor: false,
         connectDots: false,
-        enableHover: true,
+        enableHover: false,
       ),
     );
   }
