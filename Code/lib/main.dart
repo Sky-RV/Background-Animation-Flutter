@@ -6,6 +6,7 @@ import 'Dark.dart';
 import 'DotLine.dart';
 import 'GingleBell.dart';
 import 'Light.dart';
+import 'Rainbow.dart';
 import 'Smoke.dart';
 import 'animBGFullCode.dart';
 
@@ -160,6 +161,18 @@ class MyHomePage extends StatelessWidget {
                 Navigator.push(
                     context,
                     MaterialPageRoute(builder: (context) => Light())
+                );
+              },
+            ),
+
+            SizedBox(height: 20,),
+
+            ElevatedButton(
+              child: Text("Rainbow Background"),
+              onPressed: (){
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => Rainbow())
                 );
               },
             ),
