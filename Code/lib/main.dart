@@ -5,6 +5,7 @@ import 'Chrismas.dart';
 import 'Customize.dart';
 import 'GingleBell.dart';
 import 'Smoke.dart';
+import 'animBGFullCode.dart';
 
 void main() => runApp(MyApp());
 
@@ -85,6 +86,18 @@ class MyHomePage extends StatelessWidget {
                 Navigator.push(
                     context,
                     MaterialPageRoute(builder: (context) => Smoke())
+                );
+              },
+            ),
+
+            SizedBox(height: 20,),
+
+            ElevatedButton(
+              child: Text("animBGFullCode Background"),
+              onPressed: (){
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => animBGFullCode())
                 );
               },
             ),
