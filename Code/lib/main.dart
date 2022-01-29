@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:animation/Snow.dart';
 
+import 'Chrismas.dart';
 import 'GingleBell.dart';
 
 void main() => runApp(MyApp());
@@ -46,6 +47,18 @@ class MyHomePage extends StatelessWidget {
                 Navigator.push(
                     context,
                     MaterialPageRoute(builder: (context) => GingleBell())
+                );
+              },
+            ),
+
+            SizedBox(height: 20,),
+
+            ElevatedButton(
+              child: Text("Chrismas Background"),
+              onPressed: (){
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => Chrismas())
                 );
               },
             ),
