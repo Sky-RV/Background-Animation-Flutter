@@ -22,16 +22,18 @@ class MyHomePage extends StatelessWidget {
       body: CircularParticle(
         width: w,
         height: h,
-        particleColor: Color(0xffb2d6db),
-        numberOfParticles: 150,
-        speedOfParticles: 1.5,
-        maxParticleSize: 7,
-        awayRadius: 0,
-        onTapAnimation: false,
-        isRandSize: true,
-        isRandomColor: false,
+        numberOfParticles: 200,
         connectDots: false,
-        enableHover: false,
+        isRandSize: true,
+        onTapAnimation: false,
+        speedOfParticles: 1,
+        awayAnimationDuration: Duration(milliseconds: 600),
+        awayAnimationCurve: Curves.easeInCubic,
+        isRandomColor: true,
+        randColorList: [
+          Colors.grey.shade400,
+          Color(0xffb2d6db)
+        ],
       ),
     );
   }
