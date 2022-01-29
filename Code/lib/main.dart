@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:animation/Snow.dart';
-
 import 'Chrismas.dart';
 import 'Customize.dart';
+import 'DotLine.dart';
 import 'GingleBell.dart';
 import 'Smoke.dart';
 import 'animBGFullCode.dart';
@@ -105,11 +105,35 @@ class MyHomePage extends StatelessWidget {
             SizedBox(height: 20,),
 
             ElevatedButton(
+              child: Text("Bubble Background"),
+              onPressed: (){
+                // Navigator.push(
+                //     context,
+                //     MaterialPageRoute(builder: (context) => Bubblee())
+                // );
+              },
+            ),
+
+            SizedBox(height: 20,),
+
+            ElevatedButton(
+              child: Text("Stars Background"),
+              onPressed: (){
+                // Navigator.push(
+                //     context,
+                //     MaterialPageRoute(builder: (context) => Smoke())
+                // );
+              },
+            ),
+
+            SizedBox(height: 20,),
+
+            ElevatedButton(
               child: Text("Dots and Line Background"),
               onPressed: (){
                 Navigator.push(
                     context,
-                    MaterialPageRoute(builder: (context) => Smoke())
+                    MaterialPageRoute(builder: (context) => DotLine())
                 );
               },
             ),
