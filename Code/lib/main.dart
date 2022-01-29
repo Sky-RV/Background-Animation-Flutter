@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:animation/Snow.dart';
 import 'Chrismas.dart';
 import 'Customize.dart';
+import 'Dark.dart';
 import 'DotLine.dart';
 import 'GingleBell.dart';
 import 'Smoke.dart';
@@ -130,6 +131,30 @@ class MyHomePage extends StatelessWidget {
 
             ElevatedButton(
               child: Text("Dots and Line Background"),
+              onPressed: (){
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => DotLine())
+                );
+              },
+            ),
+
+            SizedBox(height: 20,),
+
+            ElevatedButton(
+              child: Text("Dark Background"),
+              onPressed: (){
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => Dark())
+                );
+              },
+            ),
+
+            SizedBox(height: 20,),
+
+            ElevatedButton(
+              child: Text("Light Background"),
               onPressed: (){
                 Navigator.push(
                     context,
